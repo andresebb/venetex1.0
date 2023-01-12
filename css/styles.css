@@ -1,0 +1,442 @@
+/* GLOBAL */
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* black: #171B2A */
+/* gray: #757F95 */
+
+code {
+  font-family: "Poppins", sans-serif;
+}
+
+.yellow-letter {
+  color: #fbc027;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #171b2a;
+}
+
+p {
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.8;
+  color: #757f95;
+}
+
+a {
+  cursor: pointer;
+}
+
+.line-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.mobile-line {
+  width: 90px;
+  height: 4px;
+  background: #fbc027;
+  margin: auto;
+  margin-bottom: 16px;
+}
+
+.mobile-line-white {
+  background: white;
+  width: 10px;
+  height: 4px;
+  margin: auto;
+
+  animation-name: move;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.line {
+  height: 2px;
+  width: 60px;
+  background-color: #fbc027;
+  margin-right: 20px;
+}
+
+.line-title {
+  font-size: 16px;
+  color: #fbc027;
+  margin: 0;
+}
+
+@keyframes move {
+  0% {
+    margin-left: 0;
+  }
+
+  50% {
+    margin-left: 88%;
+  }
+
+  100% {
+    margin-left: 0;
+  }
+}
+
+/* GLOBAL */
+
+/************************************************************************* Header */
+
+.noBlackHeader {
+  height: 50px;
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 10px 18px;
+  z-index: 9999999;
+  transition: 0.5s;
+  /* background-color: black; */
+}
+
+.blackHeader {
+  height: 50px;
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 0 18px;
+  z-index: 9999999;
+  background: black;
+  transition: 0.5s;
+}
+
+.header-logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  width: 40px;
+  height: 40px;
+}
+
+.logo-container img {
+  height: 100%;
+  width: 100%;
+}
+
+.menu-container {
+  width: 26px;
+  height: 26px;
+}
+
+.menu-container img {
+  height: 100%;
+  width: 100%;
+}
+
+.navbar-area {
+  background: black;
+  color: white;
+  /* position: absolute; */
+  right: 0;
+  left: 0;
+  transition: 1s;
+}
+
+.navbar-area ul {
+  padding: 10px;
+  margin: 10px;
+  margin-top: 0px;
+}
+.navbar-area li {
+  list-style: none;
+  margin: 10px 8px;
+  font-size: 22px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar-area li:hover {
+  font-size: 24px;
+}
+
+.nav-link {
+  font-size: 22px;
+  text-decoration: none;
+  color: white;
+}
+
+.hideNavBar {
+  margin-top: -300px;
+}
+.showNavBar {
+  margin-top: 0px;
+}
+
+/***************************************************************** HERO */
+main {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.main-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.main-image {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.main-action {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  padding: 0 20px;
+
+  animation-duration: 1s;
+}
+
+.main-name {
+  font-size: 15px;
+  font-weight: bold;
+  color: #fbc027;
+  letter-spacing: 2px;
+
+  /* animation-duration: 1s; */
+}
+
+.main-slogan {
+  font-size: 35px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: white;
+}
+
+.main-slogan span {
+  color: #fbc027;
+}
+
+.main-description {
+  color: white;
+  margin-top: 36px;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+.main-buttons {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.main-buttons p {
+  color: white;
+}
+
+.main-button-uno {
+  background: #fbc027;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 25px;
+  border-radius: 4px;
+  font-weight: lighter;
+  color: white;
+  text-decoration: none;
+  padding: 10px 8px;
+  box-shadow: inset 0 -0.4em rgb(0 0 0 / 20%);
+  transition: 0.3s;
+  animation-delay: 1s;
+}
+
+.main-button-uno:hover {
+  padding: 14px 12px;
+}
+
+.main-button-dos {
+  background: #e48900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 25px;
+  border-radius: 4px;
+  font-weight: lighter;
+  color: white;
+  text-decoration: none;
+  padding: 10px 8px;
+  animation-delay: 1s;
+  box-shadow: inset 0 -0.4em rgb(0 0 0 / 20%);
+}
+
+.main-button-dos:hover {
+  padding: 14px 12px;
+}
+
+.main-button-logo {
+  padding: 4px;
+  background: black;
+  border-radius: 6px;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+@keyframes bigger {
+  0% {
+    padding: 10px 8px;
+  }
+  100% {
+    padding: 14px 12px;
+  }
+}
+
+/***************************************************************** HEROACTION */
+
+.hero-action {
+  margin: 0px 14px;
+  margin-top: -140px;
+  z-index: 999;
+  position: relative;
+  color: white;
+  box-shadow: 0 3px 24px rgb(0 0 0 / 10%);
+}
+
+.hero-action-box {
+  cursor: pointer;
+  color: white;
+}
+
+.hero-action-box h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+}
+
+.hero-action-box svg {
+  width: 30px;
+  height: 25px;
+}
+
+.hero-action-box:hover svg {
+  color: white !important;
+  animation-name: taran;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.rastreo {
+  color: white;
+  background-color: #fbc027;
+  border-bottom: 1px solid #fbc027;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 14px 14px;
+  color: white;
+}
+
+.rastreo p {
+  color: white;
+}
+
+.pickup {
+  color: #171b2a;
+  background-color: white;
+  border-bottom: 1px solid #fbc027;
+  padding: 14px 14px;
+  transition: 1s;
+}
+.pickup h3 {
+  color: black;
+}
+
+.pickup:hover {
+  background-color: #fbc027;
+  transition: 1s;
+}
+.pickup:hover h3 {
+  color: white !important;
+}
+.pickup:hover p {
+  color: white !important;
+}
+.pickup:hover svg {
+  color: white !important;
+}
+.truck-action {
+  animation-duration: 2s;
+}
+
+.casillero {
+  color: #171b2a;
+  background-color: white;
+  border-bottom: 1px solid #fbc027;
+  padding: 14px 14px;
+}
+
+.casillero:hover {
+  background-color: #fbc027;
+  transition: 1s;
+}
+
+.casillero h3 {
+  color: black;
+}
+
+.casillero:hover h3 {
+  color: white !important;
+}
+.casillero:hover p {
+  color: white !important;
+}
+.casillero:hover svg {
+  color: white !important;
+}
+
+.envio {
+  color: white;
+  background-color: #fbc027;
+  border-bottom: 1px solid #fbc027;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 14px 14px;
+}
+
+@keyframes taran {
+  0% {
+    transform: rotateX(0deg);
+  }
+
+  50% {
+    transform: rotateX(180deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}

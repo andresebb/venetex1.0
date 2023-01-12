@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!--------------------------------------------------------------------------- HEADER -->
+    <header class="noBlackHeader">
+      <div class="header-logos">
+        <div class="logo-container">
+          <a to="/">
+            <img src="./images/header-logo.svg" alt="" />
+          </a>
+        </div>
+        <div class="menu-container" onClick="{onHeaderClick}">
+          <a to="/">
+            <img src="./images/menu.svg" alt="" />
+          </a>
+        </div>
+      </div>
+      <nav class="navbar-area hideNavBar">
+        <ul>
+          <li>
+            <a class="nav-link">Destinos</a>
+          </li>
+          <li>Ratrea tu envio</li>
+          <li>Agendar Pick up</li>
+          <li>Acerca de Nosotros</li>
+          <li>Contactanos</li>
+        </ul>
+      </nav>
+    </header>
+    <!---------------------------------------------------------------------------- HERO -->
+    <div class="main">
+      <div class="main-overlay"></div>
+      <div>
+        <video
+          src="./images/hero-video.mp4"
+          class="main-image"
+          autoplay
+          loop
+          muted
+          playsinline
+        ></video>
+      </div>
+      <div class="main-action animate__flipInX">
+        <h3 class="main-name">VENETEX EXPRESS LLC</h3>
+        <h1 class="main-slogan animate__flipInX">
+          EL SERVICIO DE TRANSPORTE <span>MAS RAPIDO</span> Y GARANTIZADO
+        </h1>
+        <p class="main-description">
+          Realiza con nosotros tu envio puerta a puerta desde Estados Unidos
+        </p>
+        <div class="main-buttons">
+          <a class="main-button-uno animate__hinge">
+            <p>CONTACTO</p>
+            <div class="main-button-logo">
+              <p>></p>
+            </div>
+          </a>
+          <a class="main-button-dos animate__hinge">
+            <p>CONTACTO</p>
+            <div class="main-button-logo">
+              <p>></p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!---------------------------------------------------------------------------- HEROACTION -->
+    <div class="hero-action">
+      <div class="hero-action-box rastreo">
+        <div>></div>
+        <h3>Rastrea carga</h3>
+        <p>
+          Solo necesitas tu numero de recibo para realizar el rastreo de tu
+          carga
+        </p>
+      </div>
+      <div class="hero-action-box pickup">
+        <div>></div>
+        <h3 class="truck-action animate__flipInX">Angendar Pickup</h3>
+        <p>
+          Si necesitas agendar un pickup solo nos tienes que dejar saber con
+          anticipacion.
+        </p>
+      </div>
+      <div class="hero-action-box casillero">
+        <div>></div>
+        <h3>Apertura Casillero</h3>
+        <p>
+          Si necesitas hacer tus compras en estados unidos nosotros podemos ser
+          tu casillero.
+        </p>
+      </div>
+      <div class="hero-action-box envio">
+        <div>></div>
+        <h3>Calcular Envio</h3>
+        <p>
+          Si tienes algo que no cumple con las medidas regulares de una caja
+          aqui puede calcular el precio.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
